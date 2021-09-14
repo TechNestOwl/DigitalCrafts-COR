@@ -1,3 +1,11 @@
 .gridContainer {
   display: grid;
+  grid-template-columns: 1fr, 2fr;
+}
+
+.gridChild {
+  background-color: blueviolet;
+  margin: 2px;
+  font-size: 2rem;
+  color: rgb(76, 228, 233);
 }
