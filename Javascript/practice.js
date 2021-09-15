@@ -27,6 +27,7 @@ foo();
 
 (()=> console.log("hello"))(); // anonymous self calling function IFFY
 
+const arry1 = ['a','b','c',4]
 
 
 
