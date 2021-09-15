@@ -3,4 +3,15 @@
     console.log("Hello World");
 })();
 
-// test();
+console.log(typeof typeof true); // returns "string"
+
+person = {
+    name:"John",
+    age: 27,
+    interests: ['snowboarding','hiking'],
+    bio:function(){
+        console.log(this.interests[1]) //return 'hiking'
+    },
+};
+
+console.log(person.bio())
