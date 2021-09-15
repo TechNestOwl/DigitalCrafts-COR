@@ -15,3 +15,18 @@ person = {
 };
 
 console.log(person.bio())
+
+function foo(){
+    const x = "fooScope"
+    function closure(){
+        console.log(x)
+    }
+    closure();
+};
+foo();
+
+(()=> console.log("hello"))(); // anonymous self calling function IFFY
+
+
+
+
