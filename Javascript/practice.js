@@ -40,6 +40,16 @@ const listItemas = filtered.map(n => '<li>' + n + '</li>');
 //combines the itmes in the list. The empty ('') seperates the items with an empty character. As opposed to the defualt comma. 
 const html = '<ul>' + listItemas.join('') + '</ul>';
 
-
+function newFilter(){
+    console.log("this is a new filter for the array")
+    let x = 20;
+}
 
 console.log(html);
+
+let arry2 = [1,2];
+console.log(arry2);
+
+let newArray = arry2.map(i => i + 1);
+console.log(newArray+ " post \"edit\"");
+
