@@ -65,3 +65,14 @@ async function getAsync(URL) {
 
 // Typescript - while not technically JAVASCRIPT, Typescript compiles into normal JS
 // vanilla js has dynamic typing, TS has static typing
+
+
+// Passing by reference, passing by value
+let y = 234;
+let x = y;
+y = 11;
+console.log(y,x);
+
+// From the above example, we can see that primitive data types when passed 
+// to another variable, are passed by value. Instead of just assigning the same 
+// address to another variable, the value is passed and new space of memory is created.
