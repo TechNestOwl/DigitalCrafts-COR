@@ -47,9 +47,21 @@ function newFilter(){
 
 console.log(html);
 
+// creating and mappig through an array
 let arry2 = [1,2];
 console.log(arry2);
 
 let newArray = arry2.map(i => i + 1);
 console.log(newArray+ " post \"edit\"");
 
+// ASYNC - performing "non-deterministic" operations
+// network request to a sever to return more data. 
+// we don't know when the request is going to return, or if it's going to fail.
+// So we have to handle both of those cases. 
+
+async function getAsync(URL) {
+    const reaponse = await fetch(URL) //await is the keyword
+};
+
+// Typescript - while not technically JAVASCRIPT, Typescript compiles into normal JS
+// vanilla js has dynamic typing, TS has static typing
