@@ -46,19 +46,22 @@ console.log(student1);
 
 function tipCalc(price, service){
     if(service == "good"){
+        total = "$" + price * 1.2;
         tipAmount = price*.2;
-        return("$"+tipAmount + " is your tip amount")
+        return("$"+tipAmount + " is your tip amount. The bill toatl is "+ total)
     }else if (service == "okay"){
+        total = "$" + price * 1.15;
         tipAmount = price*.15;
-        return(`$${tipAmount} is your tip amount`)
+        return(`$${tipAmount} is your tip amount`+ "The bill toatl is "+ total)
     }else if (service == "fair"){
+        total = "$" + price * 1.10;
         tipAmount = price*.1;
-        return("$"+tipAmount + ", appropriate tip for poor service")
+        return("$"+tipAmount + ", appropriate tip for poor service."+ " The bill toatl is "+ total)
     } else {
         return "Dine & Dash B****!"
     }
 };
 
-let payOut = tipCalc(100,"okay");
+let payOut = tipCalc(100,"good");
 
 console.log(payOut);
