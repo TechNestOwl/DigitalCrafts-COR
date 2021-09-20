@@ -1,5 +1,4 @@
 let age = 19;
-
 if (age >= 21) {
     console.log("youre over 21")
 } else if (age >= 18){
@@ -22,9 +21,8 @@ switch (age) {
 
 // For Loop: variable value | condition | iterator
 for(x = 0; x < 10; x++){
-    console.log(x)
+    // console.log(x)
 };
-
 
 // While Loop: get a value, check condition, if true, execute code block, iterate
 let b = 0;
@@ -65,3 +63,28 @@ function tipCalc(price, service){
 let payOut = tipCalc(100,"good");
 
 console.log(payOut);
+
+
+// LeetSpeak
+
+function leetSpeak(singleWord){
+    let yeet = x
+
+
+}
+
+size = 3
+
+for (i = 0; i < size; i++)
+    console.log("-");
+
+
+
+function ashleysExample(num){
+    const arr = [];
+    let result;
+    for(i = 0; i < num; i++){
+        result = "";
+    }
+}
+console.log("+--------+".repeat(2))
