@@ -18,4 +18,17 @@ switch (age) {
     default:
         console.log("not even close.");
         break;
+};
+
+// For Loop: variable value | condition | iterator
+for(x = 0; x < 10; x++){
+    console.log(x)
+};
+
+
+// While Loop: get a value, check condition, if true, execute code block, iterate
+let b = 0;
+while(b < 20){
+    console.log(b)
+    b = b +2;
 }
