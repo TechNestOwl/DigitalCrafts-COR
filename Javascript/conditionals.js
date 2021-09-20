@@ -32,3 +32,33 @@ while(b < 20){
     console.log(b)
     b = b +2;
 }
+
+
+function madLib(name, subject){
+    let response = `${name}'s favorite subject in school is ${subject}`;
+    return response;
+};
+let student1 = madLib("Jackie", "Art");
+console.log(student1);
+
+
+// Tip Calculator
+
+function tipCalc(price, service){
+    if(service == "good"){
+        tipAmount = price*.2;
+        return("$"+tipAmount + " is your tip amount")
+    }else if (service == "okay"){
+        tipAmount = price*.15;
+        return(`$${tipAmount} is your tip amount`)
+    }else if (service == "fair"){
+        tipAmount = price*.1;
+        return("$"+tipAmount + ", appropriate tip for poor service")
+    } else {
+        return "Dine & Dash B****!"
+    }
+};
+
+let payOut = tipCalc(100,"okay");
+
+console.log(payOut);
