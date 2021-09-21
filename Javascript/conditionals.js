@@ -44,8 +44,8 @@ console.log(student1);
 
 function tipCalc(price, service){
     if(service == "good"){
-        let total = "$" + price * 1.2;
         let tipAmount = price*.2;
+        let total = "$" + price * 1.2;
         return("$"+tipAmount + " is your tip amount. The bill toatl is "+ total)
     }else if (service == "okay"){
         total = "$" + price * 1.15;
@@ -81,3 +81,20 @@ size = 3
 for (i = 0; i < size; i++)
     console.log("-");
 
+
+    
+    function positiveNumbz(param1, param2, param3, param4){
+        let array1 = param1, param2, param3, param4;
+        array1 = array1.filter(function(v){
+            return v > 0
+        })
+        
+    };
+console.log(positiveNumbz(arr1));
+    
+    
+let arr1 = [1,-1,0,3,-20,5,-100,-2,50,69,20,-3000,-9]
+arr1 = arr1.filter(function(i){
+    return i > 0
+})
+console.log(arr1);
