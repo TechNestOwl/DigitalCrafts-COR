@@ -44,13 +44,13 @@ console.log(student1);
 
 function tipCalc(price, service){
     if(service == "good"){
-        total = "$" + price * 1.2;
-        tipAmount = price*.2;
+        let total = "$" + price * 1.2;
+        let tipAmount = price*.2;
         return("$"+tipAmount + " is your tip amount. The bill toatl is "+ total)
     }else if (service == "okay"){
         total = "$" + price * 1.15;
         tipAmount = price*.15;
-        return(`$${tipAmount} is your tip amount`+ "The bill toatl is "+ total)
+        return(`$${tipAmount} is your tip amount. The bill toatl is ${total}`)
     }else if (service == "fair"){
         total = "$" + price * 1.10;
         tipAmount = price*.1;
@@ -60,13 +60,16 @@ function tipCalc(price, service){
     }
 };
 
-let payOut = tipCalc(100,"good");
+let payOut = tipCalc(100,"okay");
 
 console.log(payOut);
 
 
-// LeetSpeak
 
+
+
+
+// LeetSpeak
 function leetSpeak(singleWord){
     let yeet = x
 
@@ -78,13 +81,3 @@ size = 3
 for (i = 0; i < size; i++)
     console.log("-");
 
-
-
-function ashleysExample(num){
-    const arr = [];
-    let result;
-    for(i = 0; i < num; i++){
-        result = "";
-    }
-}
-console.log("+--------+".repeat(2))
