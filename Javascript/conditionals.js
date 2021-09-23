@@ -76,25 +76,27 @@ function leetSpeak(singleWord){
 
 }
 
-size = 3
+// size = 3
 
-for (i = 0; i < size; i++)
-    console.log("-");
+// for (i = 0; i < size; i++)
+//     console.log("-");
 
 
-    
-    function positiveNumbz(param1, param2, param3, param4){
-        let array1 = param1, param2, param3, param4;
-        array1 = array1.filter(function(v){
-            return v > 0
-        })
-        
-    };
-console.log(positiveNumbz(arr1));
-    
-    
 let arr1 = [1,-1,0,3,-20,5,-100,-2,50,69,20,-3000,-9]
-arr1 = arr1.filter(function(i){
-    return i > 0
-})
-console.log(arr1);
+let arr2 = [1, -3, 5, -3, 0]
+    
+function positiveNumbz(param){
+    let array1 = param;
+    array1 = array1.filter(function(i){
+        return i > 0
+    })
+    return array1;
+};
+console.log(positiveNumbz(arr1));
+
+
+
+// arr1 = arr1.filter(function(i){
+//     return i > 0
+// })
+// console.log(arr1);
