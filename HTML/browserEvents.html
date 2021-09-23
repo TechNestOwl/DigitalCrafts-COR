@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .dynoContainer{
+            width: 20rem;
+        }
+        .randoClass{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #dyno {
+            border-style: solid;
+            border-width: 1rem;
+            border-radius: 1rem;
+        }
+        button {
+            background-color: rgb(231, 252, 44);
+        }
+        #blue-btn {
+            background-color: blue;
+            color: whitesmoke
+        }
+        #red-btn {
+            background-color: rgb(255, 38, 0);
+            color: whitesmoke
+        }
+    </style>
+</head>
+<body>
+    <div class="randoClass">
+        <h1>Browser Events</h1>
+
+        <div class="dynoContainer">
+            <p id="dyno">
+                Change my color!
+            </p>
+        </div><br>
+        <button id="blue-btn">Click me for blue</button><br>
+        <button id="red-btn">Click me for red</button>
+    </div>
+    <br>
+    <div>
+        <button onClick="this.innerHTML='CLICKED'">NOT Clicked</button>
+    </div><br>
+    <div>
+        <input type="text" id="focusInput" onfocus="myFunc(this)" placeholder='Caution!'>
+    </div>
+
+
+    <script
+    src="../Javascript/EventHandlers.js"></script>
+</body>
+</html>
