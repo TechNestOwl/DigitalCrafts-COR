@@ -37,3 +37,9 @@ function myFunc(x){
 // document.getElementById("focusInput").addEventListener(onchange, function(){
 //     this.style.bakckground="white";
 // } )
+
+// BOM - Browser Object Model
+
+window.addEventListener('resize', function(){
+    console.log(window.innerWidth);
+})
