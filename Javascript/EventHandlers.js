@@ -24,7 +24,7 @@ function redFunction() {
 
     x.style.color = "red";
     x.innerHTML="I am red now";
-    // alert("Success!");
+    alert("Success!");
 };
 
 document.getElementById("blue-btn").addEventListener("click", blueFunction );
@@ -40,6 +40,15 @@ function myFunc(x){
 
 // BOM - Browser Object Model
 
+// console log window width when resized
 window.addEventListener('resize', function(){
     console.log(window.innerWidth);
 })
+
+// listen for events(click) on the Document
+// run the function provided
+// log the target property of the event
+document.addEventListener('click',function(event){
+    console.log(event.target)
+})
+
