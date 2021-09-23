@@ -15,7 +15,7 @@ function blueFunction() {
 
     x.style.color = "blue"
     x.innerHTML="I am blue now";
-    alert("Success!");
+    // alert("Success!");
 };
 
 // Change text to red
@@ -24,7 +24,7 @@ function redFunction() {
 
     x.style.color = "red";
     x.innerHTML="I am red now";
-    alert("Success!");
+    // alert("Success!");
 };
 
 document.getElementById("blue-btn").addEventListener("click", blueFunction );
