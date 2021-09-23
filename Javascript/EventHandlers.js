@@ -29,3 +29,11 @@ function redFunction() {
 
 document.getElementById("blue-btn").addEventListener("click", blueFunction );
 document.getElementById("red-btn").addEventListener("click", redFunction );
+
+function myFunc(x){
+    x.style.background="orange";
+};
+
+// document.getElementById("focusInput").addEventListener(onchange, function(){
+//     this.style.bakckground="white";
+// } )
