@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping List</title>
-    <style>
-        button {
-            background-color: black;
-            color:white;
-            font-size: 20px;
-            cursor:pointer;
-        }
-        body {
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-</head>
-<body>
-    <h1>Shopping List</h1>
-
-    <input type="text" placeholder="Item to add..." /><br>
-
-    <button id="add-btn">Add Item</button>
-
-
-
-    <script src="../Javascript/shoppingList.js"></script>
-</body>
+<html>
+    <head>
+        <title>document</title>
+    </head>
+    <body>
+        <h1>Shopping List</h1>
+        <ul id="items">
+        </ul>
+        <Div style="margin-bottom: 1rem;">
+            <input type="type" placeholder="what would you like to add?">
+            <button>add item</button>
+        </Div>
+        <!--<h1 id="heading"></h1>
+        <ul id="list">
+          <li id="lettuce" class="green list-item">Lettuce</li>
+          <li id="tomato" class="red list-item">Tomato</li>
+          <li id="cheese" class="yellow list-item">Cheese</li>
+          <li id="burger">Burger</li>
+        </ul>
+        <button  onmouseover="alert('hi')" onclick="console.log('somebody clicked me')" >click me</button>
+        <button id="button 2">click me</button>
+        <button onclick="console.log('Button Pressed')">click me </button>
+        <button id="button 4">click me</button>-->
+        <style>
+            button{
+                background: chartreuse;
+                color: white;
+                width: 200px;
+                height: 100px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        </style>
+       <!-- <script>
+            window.addEventListener('resize', () => {
+                console.log('You Change the size of the Window!')
+            })
+        </script>
+        script>document.getElementById("heading").innerHTML = "Toppings" </script>-->
+        <script src="../Javascript/shoppingList.js"></script>
+      </body>
 </html>

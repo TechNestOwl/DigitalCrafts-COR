@@ -1,13 +1,19 @@
-const btn = document.getElementById("add-btn");
+let input = document.getElementsByTagName("input")[0];
+let submitButton = document.getElementsByTagName('button')[0];
+let itemsList=document.createElement("ul");
+let title = document.getElementsByTagName("h1")[0];
+let removeButton = null
+itemsList.setAttribute("id","items")
 
-const input = document.getElementsByTagName("input")[0];
-console.log(input);
+title.insertAdjacentElement("afterend",itemsList);
 
-btn.addEventListener("click", function(event){
-    // console.log(input.value);
-    let item = document.createElement("li")
-    item.innerHTML = input.value;
-
-    console.log(item);
-
-}); 
+submitButton.addEventListener("click",function(event){
+    let item=document.createElement("li")
+    item.innerHTML=input.value;
+    removeButton = document.createElement("button");
+    removeButton.setAttribute("class", "remove-button");
+    removeButton.innerHTML ="remove"
+    item.append(removeButton)
+    itemsList.appendChild(item);
+    input.value = "";
+})
