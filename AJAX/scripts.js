@@ -81,3 +81,5 @@ request.send();
 fetch('./sample.txt').then((response)=>{
     console.log(response);
 });
+
+
