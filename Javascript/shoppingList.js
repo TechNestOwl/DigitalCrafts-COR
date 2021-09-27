@@ -15,5 +15,7 @@ submitButton.addEventListener("click",function(event){
     removeButton.innerHTML ="remove"
     item.append(removeButton)
     itemsList.appendChild(item);
+    
     input.value = "";
-})
+
+});
