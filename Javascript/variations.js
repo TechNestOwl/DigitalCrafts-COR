@@ -23,3 +23,8 @@ name.addEventListener("keyup", () => {
         answer6.textContent = "";
     }
 });
+
+
+
+
+  
