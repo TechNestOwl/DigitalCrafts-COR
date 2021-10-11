@@ -9,3 +9,13 @@ const hostName = "127.0.0.1";
 //think of this as a specific room inside your house
 
 const port ="3000";
+
+const server = http.createServer((req,res)=> {
+    res.statusCode = 200;
+    res.setHeader("content-type", "text/plain");
+    res.end("hello world");
+});
+
+server.listen(port,hostName), () => {
+    console.log(`sever runnint at http://${hostName};${port}/`);
+}
