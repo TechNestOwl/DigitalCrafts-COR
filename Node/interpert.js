@@ -1,5 +1,6 @@
 // console.log("hello world");
 const http = require("http");
+const yoyo = require('./sampleEx');
 
 //which computer, where, are my files being hosted from?
 //this is like your house 
@@ -13,9 +14,9 @@ const port ="3000";
 const server = http.createServer((req,res)=> {
     res.statusCode = 200;
     res.setHeader("content-type", "text/plain");
-    res.end("hello world");
+    res.end(yoyo.greeting());
 });
 
 server.listen(port,hostName), () => {
-    console.log(`sever runnint at http://${hostName};${port}/`);
+    console.log(`sever running at http://${hostName};${port}/`);
 }
