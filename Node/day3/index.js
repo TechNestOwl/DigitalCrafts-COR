@@ -29,8 +29,13 @@ app.get('/friends', (req,res) => {
 app.get('/friends/:handle', (req,res) => {
    const {handle} = req.params;
    const friend = db.find(f => f.handle === handle);
-   let htmlData = ``;
-   htmlData += `<h1>${friend.name}</h1>`
-   htmlData += `<h2>${friend.handle}</h2>`
-   res.send(htmlData);
+   if(friend){
+        let htmlData = ``;
+        htmlData += `<h1>${friend.name}</h1>`
+        htmlData += `<h2>${friend.handle}</h2>`
+        res.send(htmlData);
+   }else{
+        res.status(404)       
+            .send(`No friends with the handle ${handle}`);
+   }
 });
