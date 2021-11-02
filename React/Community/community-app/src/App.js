@@ -7,6 +7,13 @@ import {
   Link
 } from 'react-router-dom';
 
+import Landing from '../src/Components/Landing';
+import SignIn from '../src/Components/SignIn';
+import About from '../src/Components/About';
+import Contacts from '../src/Components/Contacts';
+import Dashboard from '../src/Components/Dashboard';
+import NoMatch from '../src/Components/NoMatch';
+
 export default function App() {
   return (
     <Router>
@@ -16,14 +23,13 @@ export default function App() {
         </header>
       </div> */}
       <div>
-        <nav>
-          <ul>
+        <nav className="navContainer">
+          <ul clssName="navLinks">
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
             <Link to="/about">About</Link>
-
             </li>
             <li>
             <Link to="/signin">Sign In</Link>
@@ -36,6 +42,27 @@ export default function App() {
             </li>
           </ul>
         </nav>
+        {/* A <Switch> looks through it's children <Routes> and renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/signin">
+            <SignIn />
+          </Route>
+          <Route path='/contacts'>
+            <Contacts />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
+          <Route path="/*">
+            <NoMatch />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
