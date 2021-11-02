@@ -17,12 +17,10 @@ import NoMatch from '../src/Components/NoMatch';
 export default function App() {
   return (
     <Router>
-      {/* <div className="App">
+      <div className="App">
         <header className="App-header">
-          Hello, React!
+          Community
         </header>
-      </div> */}
-      <div>
         <nav className="navContainer">
           <ul clssName="navLinks">
             <li>
