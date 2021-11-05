@@ -54,7 +54,7 @@ export default function App() {
           <Route path="/dashboard">
             <Dashboard />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Landing />
           </Route>
           <Route path="/*">
